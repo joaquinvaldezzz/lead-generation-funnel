@@ -22,7 +22,7 @@ export default defineConfig({
             if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extension)) {
               extension = 'img'
             } else if (/css/i.test(extension)) {
-              return `assets/[hash][extname]`
+              return 'assets/[hash][extname]'
             }
 
             return `assets/${extension}/[name].[hash][extname]`
