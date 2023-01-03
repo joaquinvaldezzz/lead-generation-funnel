@@ -1,6 +1,6 @@
 # Lead Generation Funnel
 
-Static webpages for Lead Generation Funnel using Astro and Tailwind CSS.
+Static webpages for Lead Generation Funnel using [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
 
 ## Local Setup
 
