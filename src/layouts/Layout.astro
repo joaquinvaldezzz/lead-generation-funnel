@@ -1,0 +1,23 @@
+---
+import '@styles/main.css'
+
+const { title } = Astro.props as Props
+
+export interface Props {
+  title: string
+}
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/logomark-light.svg" />
+    <title>{title}</title>
+  </head>
+
+  <body class="min-w-xs antialiased">
+    <slot />
+  </body>
+</html>
