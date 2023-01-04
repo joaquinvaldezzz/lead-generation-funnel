@@ -1,0 +1,23 @@
+@import 'tailwindcss/components';
+
+header {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+
+  @include lg {
+    &::before {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      content: '';
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: theme('colors.green-vogue.900');
+      transform: translateX(-50%) scale(1.5);
+      transform-origin: bottom;
+    }
+  }
+}
