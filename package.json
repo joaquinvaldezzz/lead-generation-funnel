@@ -4,6 +4,8 @@
     "build": "astro build",
     "dev": "astro dev",
     "format": "prettier --write .",
+    "lint": "eslint --fix .",
+    "lint:styles": "stylelint --fix src/**/*.scss",
     "preview": "astro preview"
   },
   "browserslist": {
@@ -25,7 +27,7 @@
     ]
   },
   "dependencies": {
-    "astro": "^1.8.0",
+    "astro": "^1.9.0",
     "autoprefixer": "^10.4.13",
     "tailwindcss": "^3.2.4"
   },
@@ -33,13 +35,21 @@
     "@prettier/plugin-xml": "^2.2.0",
     "eslint": "^8.31.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "postcss": "^8.4.20",
     "postcss-sort-media-queries": "^4.3.0",
+    "postcss-sorting": "^7.0.1",
     "prettier": "^2.8.1",
-    "prettier-plugin-astro": "^0.7.0",
-    "prettier-plugin-tailwindcss": "^0.2.1"
+    "prettier-plugin-astro": "^0.7.1",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "sass": "^1.57.1",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-standard-scss": "^6.1.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.3.0"
   }
 }
