@@ -9,6 +9,9 @@ module.exports = {
       padding: '1rem',
     },
     extend: {
+      backgroundImage: {
+        pattern: "url('/images/pattern.jpg')",
+      },
       colors: {
         'green-vogue': {
           50: '#e5f9ff',
