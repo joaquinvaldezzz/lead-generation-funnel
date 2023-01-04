@@ -2,6 +2,45 @@
 import Layout from '../layouts/Layout.astro'
 ---
 
-<Layout title="">
-  <div></div>
+<Layout title="Lead Generation Funnel">
+  <header
+    class="relative min-h-screen overflow-hidden bg-green-vogue-900 text-white lg:bg-transparent"
+  >
+    <img class="absolute top-0 -right-1/3 select-none" src="/images/hyperzon-logomark.png" alt="" />
+
+    <nav class="container relative flex items-center py-4">
+      <a href="/">
+        <img class="w-48 md:w-56 lg:w-64" src="/images/hyperzon-logotype.png" alt="Hyperzon" />
+      </a>
+    </nav>
+
+    <div class="container relative">
+      <div class="grid grid-cols-1 gap-4">
+        <div>
+          <picture>
+            <source media="(min-width: 768px)" srcset="/images/monochrome-ebook@1.5.png" />
+            <img class="w-full" src="/images/monochrome-ebook@1.png" alt="Monochrome eBook" />
+          </picture>
+        </div>
+
+        <div class="text-center">
+          <h1 class="text-4xl font-black uppercase">Headline here</h1>
+          <div class="mt-2 text-xl font-black uppercase">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </div>
+          <div class="mt-4">
+            <button
+              class="block w-full rounded-full bg-green-yellow-300 px-4 py-3 font-medium uppercase tracking-wide text-black"
+              type="button"
+            >
+              Download now
+            </button>
+          </div>
+          <p class="mt-4 text-sm uppercase tracking-wide">
+            Download within <span class="font-bold">00:29:45</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
 </Layout>
