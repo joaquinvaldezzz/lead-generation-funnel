@@ -1,11 +1,11 @@
 @import 'tailwindcss/components';
 
 header {
-  @include lg {
+  @include md {
     &::before {
       position: absolute;
-      left: 50%;
       bottom: 0;
+      left: 50%;
       content: '';
       z-index: -1;
       width: 100%;
