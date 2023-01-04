@@ -4,9 +4,13 @@ import Layout from '../layouts/Layout.astro'
 
 <Layout title="Lead Generation Funnel">
   <header
-    class="relative min-h-screen overflow-hidden bg-green-vogue-900 text-white lg:bg-transparent"
+    class="relative min-h-screen overflow-hidden bg-green-vogue-900 text-white md:bg-transparent"
   >
-    <img class="absolute top-0 -right-1/3 select-none" src="/images/hyperzon-logomark.png" alt="" />
+    <img
+      class="pointer-events-none absolute top-0 -right-1/3 max-h-screen select-none sm:-top-24 md:-top-48 lg:-top-32 lg:-right-24"
+      src="/images/hyperzon-logomark.png"
+      alt=""
+    />
 
     <nav class="container relative flex items-center py-4">
       <a href="/">
@@ -15,20 +19,24 @@ import Layout from '../layouts/Layout.astro'
     </nav>
 
     <div class="container relative">
-      <div class="grid grid-cols-1 gap-4">
+      <div
+        class="grid grid-cols-1 gap-4 sm:mx-auto sm:max-w-sm lg:max-w-none lg:grid-cols-2 lg:items-center"
+      >
         <div>
           <picture>
-            <source media="(min-width: 768px)" srcset="/images/monochrome-ebook@1.5.png" />
+            <source media="(min-width: 640px)" srcset="/images/monochrome-ebook@1.5.png" />
+            <source media="(min-width: 768px)" srcset="/images/monochrome-ebook@2.png" />
+            <source media="(min-width: 1024px)" srcset="/images/monochrome-ebook@3.png" />
             <img class="w-full" src="/images/monochrome-ebook@1.png" alt="Monochrome eBook" />
           </picture>
         </div>
 
-        <div class="text-center">
-          <h1 class="text-4xl font-black uppercase">Headline here</h1>
-          <div class="mt-2 text-xl font-black uppercase">
+        <div class="text-center xl:mx-auto xl:max-w-lg">
+          <h1 class="text-4xl font-black uppercase lg:text-5xl xl:text-6xl">Headline here</h1>
+          <div class="mt-2 text-xl font-black uppercase lg:text-2xl xl:mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </div>
-          <div class="mt-4">
+          <div class="mt-4 lg:mt-6">
             <button
               class="block w-full rounded-full bg-green-yellow-300 px-4 py-3 font-medium uppercase tracking-wide text-black"
               type="button"
