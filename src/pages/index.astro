@@ -3,9 +3,7 @@ import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title="Lead Generation Funnel">
-  <header
-    class="relative min-h-screen overflow-hidden bg-green-vogue-900 text-white md:bg-transparent"
-  >
+  <header class="relative min-h-screen overflow-hidden text-white">
     <img
       class="pointer-events-none absolute top-0 -right-1/3 max-h-screen select-none sm:-top-24 md:-top-48 lg:-top-32 lg:-right-24"
       src="/images/hyperzon-logomark.png"
@@ -51,4 +49,132 @@ import Layout from '../layouts/Layout.astro'
       </div>
     </div>
   </header>
+
+  <div class="mx-auto max-w-screen-xl px-4 py-8 md:py-16">
+    <div
+      class="grid grid-cols-1 gap-6 sm:mx-auto sm:max-w-sm lg:max-w-none lg:grid-cols-3 lg:gap-8"
+    >
+      <div class="flex items-center gap-4 rounded-xl bg-white p-4 shadow-md">
+        <div class="h-16 w-16 shrink-0 overflow-hidden rounded-full bg-gray-500">
+          <picture>
+            <source media="(min-width: 640px)" srcset="/images/avatars/avatar-go-pure@2x.jpg" />
+            <source media="(min-width: 768px)" srcset="/images/avatars/avatar-go-pure@3x.jpg" />
+            <source media="(min-width: 1024px)" srcset="/images/avatars/avatar-go-pure@4x.jpg" />
+            <img class="w-full" src="/images/avatars/avatar-go-pure@1x.jpg" alt="Go Pure" />
+          </picture>
+        </div>
+
+        <div class="grow">
+          <p>
+            "Lorem ipsum dolor sit amet consectetur." - <span class="font-bold"> Go Pure</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 rounded-xl bg-white p-4 shadow-md">
+        <div class="h-16 w-16 shrink-0 overflow-hidden rounded-full bg-gray-500">
+          <picture>
+            <source
+              media="(min-width: 640px)"
+              srcset="/images/avatars/avatar-vets-preferred@2x.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/images/avatars/avatar-vets-preferred@3x.jpg"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="/images/avatars/avatar-vets-preferred@4x.jpg"
+            />
+            <img
+              class="w-full"
+              src="/images/avatars/avatar-vets-preferred@1x.jpg"
+              alt="Vets Preferred"
+            />
+          </picture>
+        </div>
+
+        <div class="grow">
+          <p>
+            "Lorem ipsum dolor sit amet consectetur." -
+            <span class="font-bold">Vets Preferred</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 rounded-xl bg-white p-4 shadow-md">
+        <div class="h-16 w-16 shrink-0 overflow-hidden rounded-full bg-gray-500">
+          <picture>
+            <source media="(min-width: 640px)" srcset="/images/avatars/avatar-vee-fresh@2x.jpg" />
+            <source media="(min-width: 768px)" srcset="/images/avatars/avatar-vee-fresh@3x.jpg" />
+            <source media="(min-width: 1024px)" srcset="/images/avatars/avatar-vee-fresh@4x.jpg" />
+            <img class="w-full" src="/images/avatars/avatar-vee-fresh@1x.jpg" alt="Vee Fresh" />
+          </picture>
+        </div>
+
+        <div class="grow">
+          <p>
+            "Lorem ipsum dolor sit amet consectetur." - <span class="font-bold">Vee Fresh</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 space-y-4">
+      <p class="text-gray-600">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+
+      <p class="text-gray-600">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+
+      <h2 class="font-bold uppercase tracking-wide">Lorem ipsum dolor sit</h2>
+
+      <div class="grid grid-cols-1 gap-4 text-gray-600 md:grid-cols-2">
+        <ul class="list-disc space-y-4 pl-4">
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </li>
+
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </li>
+
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </li>
+
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </li>
+        </ul>
+
+        <ul class="list-disc space-y-4 pl-4">
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </li>
+
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </li>
+
+          <li>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </Layout>
