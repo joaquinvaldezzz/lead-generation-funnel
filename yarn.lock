@@ -2058,6 +2058,11 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
+featherlight@^1.7.14:
+  version "1.7.14"
+  resolved "https://registry.yarnpkg.com/featherlight/-/featherlight-1.7.14.tgz#7896909d0d7ac4672c334ba018363e519d31e4db"
+  integrity sha512-4R0Vk0pTN5IPCuMABPtXJ6hgGgoK1qwbxGB4Nf06gXovw/i+r3s/f94ksZYjsW3c2oMEAS9A8exdlNaX9YSSRQ==
+
 fetch-blob@^3.1.2, fetch-blob@^3.1.4:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/fetch-blob/-/fetch-blob-3.2.0.tgz#f09b8d4bbd45adc6f0c20b7e787e793e309dcce9"
