@@ -1,5 +1,6 @@
 /* eslint-disable global-require */
 const defaultTheme = require('tailwindcss/defaultTheme')
+const plugin = require('tailwindcss/plugin')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -50,5 +51,14 @@ module.exports = {
   corePlugins: {
     aspectRatio: false,
   },
-  plugins: [require('@tailwindcss/aspect-ratio')],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    plugin(({ addUtilities }) => {
+      addUtilities({
+        '.transform-center': {
+          transform: 'translate(-50%, -50%)',
+        },
+      })
+    }),
+  ],
 }
