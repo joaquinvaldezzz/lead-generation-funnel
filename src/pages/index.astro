@@ -182,44 +182,52 @@ import Footer from '@components/Footer.astro'
 
   <CTA />
 
-  <div class="mx-auto max-w-screen-xl px-4 py-8 md:py-16 lg:max-w-screen-md xl:max-w-screen-lg">
-    <div class="grid grid-cols-1 gap-8 sm:mx-auto sm:max-w-sm md:max-w-none md:grid-cols-2">
-      <div>
-        <div
-          class="aspect-h-1 aspect-w-1 overflow-hidden rounded-xl shadow-md md:aspect-h-16 md:aspect-w-9 xl:aspect-h-4 xl:aspect-w-3"
-        >
-          <img
-            class="object-cover object-center"
-            src="/images/profiles/profile-ico@1x.jpg"
-            alt="Hristo Arakliev"
-          />
+  <div class="relative overflow-hidden bg-white px-4 py-8 md:py-16">
+    <img
+      class="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none px-4 opacity-5 sm:mx-auto sm:max-w-screen-sm md:top-auto md:translate-y-0 lg:-bottom-1/3 lg:max-w-screen-md xl:-bottom-1/2 xl:max-w-screen-lg"
+      src="/images/hyperzon-logomark.png"
+      alt=""
+    />
+
+    <div class="mx-auto max-w-screen-xl lg:max-w-screen-md xl:max-w-screen-lg">
+      <div class="grid grid-cols-1 gap-8 sm:mx-auto sm:max-w-sm md:max-w-none md:grid-cols-2">
+        <div>
+          <div
+            class="aspect-h-1 aspect-w-1 overflow-hidden rounded-xl shadow-md md:aspect-h-16 md:aspect-w-9 md:rounded-2xl xl:aspect-h-4 xl:aspect-w-3"
+          >
+            <img
+              class="object-cover object-center"
+              src="/images/profiles/profile-ico@1x.jpg"
+              alt="Hristo Arakliev"
+            />
+          </div>
         </div>
-      </div>
 
-      <div class="space-y-6 text-gray-600 xl:text-xl">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <div class="space-y-6 text-gray-600 xl:text-xl">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
 
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
-        </p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
 
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-          deserunt mollit anim id est laborum.
-        </p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum.
+          </p>
 
-        <p class="font-bold uppercase text-black">Has been seen on:</p>
-        <div class="grid grid-cols-3 items-center gap-8 xl:flex">
-          <img class="xl:h-16" src="/images/logos/logo-geek-out@4x.png" alt="Geek Out" />
-          <img class="xl:h-16" src="/images/logos/logo-aw@4x.png" alt="AW" />
-          <img class="xl:h-16" src="/images/logos/logo-white-label@4x.png" alt="White Label" />
+          <p class="font-bold uppercase text-black">Has been seen on:</p>
+          <div class="grid grid-cols-3 items-center gap-8 xl:flex">
+            <img class="xl:h-16" src="/images/logos/logo-geek-out@4x.png" alt="Geek Out" />
+            <img class="xl:h-16" src="/images/logos/logo-aw@4x.png" alt="AW" />
+            <img class="xl:h-16" src="/images/logos/logo-white-label@4x.png" alt="White Label" />
+          </div>
         </div>
       </div>
     </div>
