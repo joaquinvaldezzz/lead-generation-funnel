@@ -1,11 +1,13 @@
 ---
+import Title from '@components/Title.astro'
 import '@styles/main.scss'
 import 'featherlight/release/featherlight.min.css'
 
-const { title } = Astro.props as Props
+const { title, suffix } = Astro.props as Props
 
 export interface Props {
   title: string
+  suffix?: string
 }
 ---
 
@@ -15,7 +17,7 @@ export interface Props {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/hyperzon-logomark.png" />
-    <title>{title}</title>
+    <Title title={title} suffix={suffix} />
   </head>
 
   <body class="min-w-xs bg-pattern bg-contain bg-repeat antialiased">

@@ -1,0 +1,14 @@
+---
+export interface Props {
+  title: string
+  suffix?: string
+}
+
+const { title, suffix } = Astro.props as Props
+
+const titleWithSuffix = suffix ? `${title} - ${suffix}` : title
+---
+
+<title>{titleWithSuffix}</title>
+<meta property="og:title" content={titleWithSuffix} />
+<meta name="twitter:title" content={titleWithSuffix} />
