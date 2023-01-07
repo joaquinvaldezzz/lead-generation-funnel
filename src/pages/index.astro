@@ -37,12 +37,13 @@ import Footer from '@components/Footer.astro'
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </div>
           <div class="mt-4 lg:mt-6">
-            <button
+            <a
               class="block w-full rounded-full bg-green-yellow-300 px-4 py-3 font-medium uppercase tracking-wide text-black"
-              type="button"
+              data-featherlight="#pop-up"
+              href="#"
             >
               Download now
-            </button>
+            </a>
           </div>
           <p class="mt-4 text-sm uppercase tracking-wide">
             Download within <span class="font-bold">00:29:45</span>
@@ -235,6 +236,10 @@ import Footer from '@components/Footer.astro'
 
   <CTA />
   <Footer />
+
+  <div class="hidden" id="pop-up">
+    <!-- Embed the form here -->
+  </div>
 
   <script src="https://code.jquery.com/jquery-latest.js" is:inline></script>
   <script
