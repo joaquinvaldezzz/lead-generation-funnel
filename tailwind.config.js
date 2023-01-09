@@ -49,13 +49,6 @@ module.exports = {
   },
   corePlugins: {
     aspectRatio: false,
-    backdropOpacity: false,
-    backgroundOpacity: false,
-    borderOpacity: false,
-    divideOpacity: false,
-    placeholderOpacity: false,
-    ringOpacity: false,
-    textOpacity: false,
   },
   plugins: [require('@tailwindcss/aspect-ratio')],
 }
