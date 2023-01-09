@@ -1,0 +1,83 @@
+---
+import Layout from '@layouts/Layout.astro'
+import Footer from '@components/Footer.astro'
+---
+
+<Layout title="How to win at Amazon">
+  <header class="relative overflow-hidden pb-16 text-white lg:pb-24 xl:pb-32 2xl:pb-48">
+    <img
+      class="pointer-events-none absolute top-0 -right-1/3 max-h-screen select-none sm:-top-48 md:-top-64 lg:-top-32 lg:-right-24 2xl:-top-48"
+      src="/images/hyperzon-logomark.png"
+      alt=""
+    />
+
+    <nav class="container relative flex items-center py-4">
+      <a href="">
+        <img class="w-48 md:w-56 lg:w-64" src="/images/hyperzon-logotype.png" alt="Hyperzon" />
+      </a>
+    </nav>
+
+    <div class="container relative lg:pt-24">
+      <div class="py-24 text-center sm:pb-32 md:mx-auto md:max-w-xl xl:max-w-3xl">
+        <h1 class="text-4xl font-black uppercase lg:text-5xl xl:text-6xl">Headline here</h1>
+        <div class="mt-2 text-xl font-black uppercase lg:text-2xl xl:mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua.
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="relative mx-auto -mt-32 max-w-screen-md px-4 pb-8 lg:-mt-48 xl:-mt-56 2xl:-mt-72">
+    <h2
+      class="mt-2 text-center text-xl font-black uppercase text-green-yellow-300 md:text-2xl lg:text-3xl xl:mt-4 xl:text-4xl"
+    >
+      Short to the point headline
+    </h2>
+
+    <div>
+      <div class="aspect-h-9 aspect-w-16 mt-4 overflow-hidden rounded-2xl">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
+        ></iframe>
+      </div>
+    </div>
+
+    <div class="mt-8 space-y-4">
+      <h3 class="text-center font-bold uppercase">Lorem ipsum dolor sit amet</h3>
+      <ul class="list-disc space-y-4 pl-4 text-gray-600">
+        {
+          Array.from({ length: 5 }).map(() => (
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+
+  <div class="relative overflow-hidden bg-white py-8 md:py-16">
+    <img
+      class="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none px-4 opacity-5 sm:mx-auto sm:max-w-screen-sm md:top-auto md:translate-y-0 lg:-bottom-1/3 lg:max-w-screen-md xl:-bottom-1/2 xl:max-w-screen-lg"
+      src="/images/hyperzon-logomark.png"
+      alt=""
+    />
+
+    <div class="mx-auto max-w-screen-md px-4">
+      <!-- Embed form here -->
+    </div>
+  </div>
+
+  <div class="bg-green-vogue-900 px-4 py-8 md:py-12">
+    <div class="text-center">
+      <p class="font-bold text-white">
+        <span class="uppercase">For help, email</span>: <a href="mailto:hello@hyperzon.io">
+          hello@hyperzon.io
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <Footer />
+</Layout>
