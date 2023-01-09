@@ -1,0 +1,157 @@
+---
+import Layout from '@layouts/Layout.astro'
+import Footer from '@components/Footer.astro'
+---
+
+<Layout title="The Winning Amazon Formula">
+  <header class="relative overflow-hidden pb-16 text-white lg:pb-24 xl:pb-32 2xl:pb-48">
+    <img
+      class="pointer-events-none absolute top-0 -right-1/3 max-h-screen select-none sm:-top-48 md:-top-64 lg:-top-32 lg:-right-24 2xl:-top-48"
+      src="/images/hyperzon-logomark.png"
+      alt=""
+    />
+
+    <nav class="container relative flex items-center py-4">
+      <a href="">
+        <img class="w-48 md:w-56 lg:w-64" src="/images/hyperzon-logotype.png" alt="Hyperzon" />
+      </a>
+    </nav>
+
+    <div class="container relative lg:pt-24">
+      <div class="py-24 text-center sm:pb-32 md:mx-auto md:max-w-xl xl:max-w-3xl">
+        <h1 class="text-4xl font-black uppercase lg:text-5xl xl:text-6xl">
+          The Winning Amazon Formula
+        </h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="relative mx-auto -mt-32 max-w-screen-md px-4 pb-8 lg:-mt-48 xl:-mt-56 2xl:-mt-72">
+    <div class="aspect-h-9 aspect-w-16 mt-4 overflow-hidden rounded-2xl">
+      <!-- Embed the video here -->
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"></iframe>
+    </div>
+
+    <div class="mx-auto mt-4 flex max-w-lg items-center gap-4">
+      <div class="w-4/12">
+        <picture>
+          <source media="(min-width: 640px)" srcset="/images/monochrome-ebook@2x.png" />
+          <source media="(min-width: 768px)" srcset="/images/monochrome-ebook@3x.png" />
+          <source media="(min-width: 1024px)" srcset="/images/monochrome-ebook@4x.png" />
+          <img class="w-full" src="/images/monochrome-ebook@1x.png" alt="Monochrome eBook" />
+        </picture>
+      </div>
+
+      <div class="w-8/12">
+        <h3 class="text-lg font-bold uppercase">Lorem ipsum dolor</h3>
+        <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-green-vogue-900 px-4 py-8 md:py-12">
+    <div class="text-center sm:mx-auto sm:max-w-sm">
+      <div>
+        <a
+          class="block w-full rounded-full border border-transparent bg-green-yellow-300 px-4 py-3 font-medium uppercase tracking-wide text-black transition hover:border-green-yellow-300 hover:bg-transparent hover:text-green-yellow-300 focus:outline-none focus:ring-2 focus:ring-green-yellow-300/50 focus:ring-offset-4 focus:ring-offset-green-vogue-900"
+          data-featherlight="#pop-up"
+          href="#"
+        >
+          Click here to register
+        </a>
+      </div>
+
+      <p class="mt-2 font-bold uppercase tracking-wide text-white">For the free webinar training</p>
+    </div>
+  </div>
+
+  <div class="relative overflow-hidden bg-white py-8 md:py-16">
+    <img
+      class="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none px-4 opacity-5 sm:mx-auto sm:max-w-screen-sm md:top-auto md:translate-y-0 lg:-bottom-1/3 lg:max-w-screen-md xl:-bottom-1/2 xl:max-w-screen-lg"
+      src="/images/hyperzon-logomark.png"
+      alt=""
+    />
+
+    <div class="container">
+      <h2 class="text-center text-xl uppercase">Upcoming training</h2>
+
+      <div class="swiper mt-4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="aspect-h-9 aspect-w-16 overflow-hidden rounded-2xl">
+              <div class="bg-gray-500"></div>
+            </div>
+            <h3 class="mt-2 text-center">Lorem ipsum dolor</h3>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="aspect-h-9 aspect-w-16 overflow-hidden rounded-2xl">
+              <div class="bg-gray-500"></div>
+            </div>
+            <h3 class="mt-2 text-center">Lorem ipsum dolor</h3>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="aspect-h-9 aspect-w-16 overflow-hidden rounded-2xl">
+              <div class="bg-gray-500"></div>
+            </div>
+            <h3 class="mt-2 text-center">Lorem ipsum dolor</h3>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="aspect-h-9 aspect-w-16 overflow-hidden rounded-2xl">
+              <div class="bg-gray-500"></div>
+            </div>
+            <h3 class="mt-2 text-center">Lorem ipsum dolor</h3>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="aspect-h-9 aspect-w-16 overflow-hidden rounded-2xl">
+              <div class="bg-gray-500"></div>
+            </div>
+            <h3 class="mt-2 text-center">Lorem ipsum dolor</h3>
+          </div>
+        </div>
+
+        <button class="swiper-button-prev" type="button"></button>
+        <button class="swiper-button-next" type="button"></button>
+      </div>
+    </div>
+  </div>
+
+  <Footer />
+
+  <div class="hidden" id="pop-up">
+    <!-- Embed the form here -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" is:inline></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js"
+    is:inline
+  ></script>
+
+  <script>
+    import Swiper, { Navigation } from 'swiper'
+
+    const swiper = new Swiper('.swiper', {
+      modules: [Navigation],
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      spaceBetween: 32,
+      slidesPerView: 1,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    })
+
+    swiper.init()
+  </script>
+</Layout>
