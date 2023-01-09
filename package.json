@@ -31,6 +31,7 @@
     "astro": "^1.9.0",
     "autoprefixer": "^10.4.13",
     "featherlight": "^1.7.14",
+    "swiper": "^8.4.5",
     "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
