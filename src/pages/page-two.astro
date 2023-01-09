@@ -37,6 +37,7 @@ import Footer from '@components/Footer.astro'
 
     <div>
       <div class="aspect-h-9 aspect-w-16 mt-4 overflow-hidden rounded-2xl">
+        <!-- Embed the video here -->
         <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
         ></iframe>
       </div>
@@ -71,8 +72,11 @@ import Footer from '@components/Footer.astro'
 
   <div class="bg-green-vogue-900 px-4 py-8 md:py-12">
     <div class="text-center">
-      <p class="font-bold text-white">
-        <span class="uppercase">For help, email</span>: <a href="mailto:hello@hyperzon.io">
+      <p class="font-bold text-white md:text-xl">
+        <span class="uppercase">For help, email</span>: <a
+          class="hover:underline"
+          href="mailto:hello@hyperzon.io"
+        >
           hello@hyperzon.io
         </a>
       </p>
