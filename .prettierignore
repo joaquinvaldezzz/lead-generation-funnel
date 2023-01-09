@@ -1,6 +1,6 @@
 # build output
 .output/
-dist/
+dist/assets/
 
 # dependencies
 node_modules/
