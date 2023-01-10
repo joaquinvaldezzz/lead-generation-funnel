@@ -10,14 +10,16 @@ import Footer from '@components/Footer.astro'
     <div
       class="grid grid-cols-1 gap-4 sm:mx-auto sm:max-w-sm lg:max-w-none lg:grid-cols-2 lg:items-center"
     >
-      <div>
-        <picture>
-          <source media="(min-width: 640px)" srcset="/images/monochrome-ebook@2x.png" />
-          <source media="(min-width: 768px)" srcset="/images/monochrome-ebook@3x.png" />
-          <source media="(min-width: 1024px)" srcset="/images/monochrome-ebook@4x.png" />
-          <img class="w-full" src="/images/monochrome-ebook@1x.png" alt="Monochrome eBook" />
-        </picture>
-      </div>
+      <picture>
+        <source media="(min-width: 640px)" srcset="/images/monochrome-ebook@2x.png" />
+        <source media="(min-width: 768px)" srcset="/images/monochrome-ebook@3x.png" />
+        <source media="(min-width: 1024px)" srcset="/images/monochrome-ebook@4x.png" />
+        <img
+          class="w-full lg:mx-auto lg:w-10/12"
+          src="/images/monochrome-ebook@1x.png"
+          alt="Monochrome eBook"
+        />
+      </picture>
 
       <div class="text-center xl:mx-auto xl:max-w-lg">
         <h1 class="text-4xl font-black uppercase lg:text-5xl xl:text-6xl">Headline here</h1>
