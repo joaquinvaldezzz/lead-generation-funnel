@@ -27,7 +27,7 @@ header {
 .button-prev,
 .button-next {
   position: absolute;
-  top: calc(50% - 0.5rem);
+  top: calc(50% - 1rem);
   z-index: 10;
   transform: translateY(-50%);
 }
