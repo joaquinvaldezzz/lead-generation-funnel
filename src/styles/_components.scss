@@ -23,3 +23,11 @@ header {
     }
   }
 }
+
+.button-prev,
+.button-next {
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  z-index: 10;
+  transform: translateY(-50%);
+}

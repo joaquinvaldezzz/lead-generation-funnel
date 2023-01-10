@@ -115,23 +115,46 @@ import Footer from '@components/Footer.astro'
           </div>
         </div>
 
-        <button class="swiper-button-prev lg:-left-16" type="button"> </button>
-        <button class="swiper-button-next lg:-right-16" type="button"></button>
+        <button class="button-prev left-0 disabled:opacity-30 xl:-left-16" type="button">
+          <svg
+            class="h-8 w-8"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"
+            ></path>
+          </svg>
+        </button>
+
+        <button class="button-next right-0 disabled:opacity-30 xl:-right-16" type="button">
+          <svg
+            class="h-8 w-8"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            ></path>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
-
-  <Footer />
-
-  <div class="hidden" id="pop-up">
-    <!-- Embed the form here -->
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js" is:inline></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js"
-    is:inline
-  ></script>
-
-  <script src="../scripts/swiper.js"></script>
 </Layout>
+
+<Footer />
+
+<div class="hidden" id="pop-up">
+  <!-- Embed the form here -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" is:inline></script>
+<script src="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" is:inline
+></script>
+
+<script src="../scripts/swiper.js"></script>

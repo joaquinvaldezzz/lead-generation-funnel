@@ -3,8 +3,8 @@ import Swiper, { Navigation } from 'swiper'
 const swiper = new Swiper('.swiper', {
   modules: [Navigation],
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    prevEl: '.button-prev',
+    nextEl: '.button-next',
   },
   spaceBetween: 32,
   slidesPerView: 1,
